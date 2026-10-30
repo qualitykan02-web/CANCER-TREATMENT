@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dashboard การรักษามะเร็งในระยะเวลาที่กำหนด จังหวัดกาญจนบุรี ปี 2566–2569</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff1f7;--card:#fff;--tx:#3b1230;--mu:#7a5a72;--bd:#f3d9e8;--ok:#10b981;--no:#ef4444;--sh:0 6px 18px rgba(190,40,120,.13);--h1:#ec4899;--h2:#8b5cf6;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1c0f1a;--card:#2a1626;--tx:#ffeaf5;--mu:#c9a6bd;--bd:#4a2a43;--h1:#9d174d;--h2:#5b21b6;--sh:0 6px 18px rgba(0,0,0,.45)}}
+:root[data-theme="dark"]{--bg:#1c0f1a;--card:#2a1626;--tx:#ffeaf5;--mu:#c9a6bd;--bd:#4a2a43;--h1:#9d174d;--h2:#5b21b6;--sh:0 6px 18px rgba(0,0,0,.45)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:"Noto Sans Thai",Tahoma,sans-serif;line-height:1.5}
+.wrap{max-width:1100px;margin:0 auto;padding:14px}
+.hero{border-radius:22px;background:linear-gradient(120deg,var(--h1),var(--h2));color:#fff;padding:20px 20px 0;box-shadow:var(--sh);overflow:hidden}
+.hero h1{margin:0;font-size:clamp(19px,4vw,28px);font-weight:800}.hero p{margin:4px 0 0;font-size:14px;opacity:.94}
+.hero svg{display:block;width:100%;height:auto;margin-top:4px}
+.grid{display:grid;gap:12px}.g3{grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}.g2{grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
+.card{background:var(--card);border-radius:20px;padding:16px;box-shadow:var(--sh);margin-top:12px}
+.card h2{margin:0 0 2px;font-size:18px;font-weight:800}.sub{margin:0 0 12px;font-size:13px;color:var(--mu)}
+.k{background:var(--card);border-radius:20px;padding:16px;box-shadow:var(--sh);border-top:7px solid var(--c);text-align:center}
+.k h3{margin:0;font-size:15px}.k small{display:block;color:var(--mu);font-size:12.5px}
+.ring{--p:0;--c:#ec4899;width:130px;height:130px;margin:10px auto;border-radius:50%;background:conic-gradient(var(--c) calc(var(--p)*1%),var(--bd) 0);display:grid;place-items:center}
+.ring i{font-style:normal;width:92px;height:92px;border-radius:50%;background:var(--card);display:grid;place-items:center;font-weight:800;font-size:22px}
+.pill{display:inline-block;border-radius:99px;padding:2px 12px;font-size:12.5px;font-weight:600;color:#fff;background:var(--ok)}
+.pill.no{background:var(--no)}.pill.wt{background:#f59e0b}
+.ctl{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;display:flex;gap:8px;flex-wrap:wrap;align-items:center;background:var(--card);border-radius:18px;padding:10px 12px;box-shadow:var(--sh);margin-top:12px}
+.seg{display:flex;gap:4px;background:var(--bd);border-radius:14px;padding:3px}
+.seg button{border:0;border-radius:11px;padding:7px 13px;font:600 13.5px "Noto Sans Thai",sans-serif;background:transparent;color:var(--tx);cursor:pointer}
+.seg button.on{background:linear-gradient(120deg,#ec4899,#8b5cf6);color:#fff}
+.ctl b{font-size:13px;color:var(--mu)}
+.tr{display:grid;grid-template-columns:150px 1fr 66px;gap:8px;align-items:center;margin:9px 0;font-size:13.5px}
+.tr .b{position:relative;height:18px;background:var(--bd);border-radius:10px}
+.tr .b i{display:block;height:100%;border-radius:10px;background:linear-gradient(90deg,var(--c),var(--c2))}
+.tr .b u{position:absolute;top:-4px;bottom:-4px;width:2px;background:var(--tx);opacity:.7}
+.tr b{text-align:right}.tr small{color:var(--mu)}
+.lg{font-size:12.5px;color:var(--mu);margin-top:6px}
+.chip{display:inline-block;border-radius:99px;padding:3px 11px;font-size:12.5px;margin:3px 4px 0 0;background:var(--bd)}
+.alert{border-left:8px solid #f59e0b}
+.rec{background:linear-gradient(135deg,rgba(236,72,153,.12),rgba(139,92,246,.14))}
+.rec ol,.alert ul{margin:0;padding-left:20px;font-size:14px}.rec li,.alert li{margin:6px 0}
+.tw{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:13px;min-width:600px}
+th{background:linear-gradient(90deg,#ec4899,#8b5cf6);color:#fff;padding:7px;font-weight:600}
+td{padding:5px 6px;border-bottom:1px solid var(--bd);text-align:center}td:first-child{text-align:left}
+tr:nth-child(even) td{background:rgba(236,72,153,.05)}
+td input{width:62px;border:2px solid var(--bd);border-radius:8px;padding:4px;font:600 13px "Noto Sans Thai",sans-serif;background:var(--card);color:var(--tx);text-align:center}
+.note{font-size:12px;color:var(--mu);margin:14px 4px}
+svg text{fill:var(--tx);font-family:"Noto Sans Thai",sans-serif}
+.cc{cursor:pointer}
+.sv,.rs{border:0;border-radius:12px;padding:8px 14px;font:700 13.5px "Noto Sans Thai",sans-serif;cursor:pointer;color:#fff;background:linear-gradient(120deg,#10b981,#059669)}.rs{background:linear-gradient(120deg,#94a3b8,#64748b)}.sv:disabled{opacity:.6}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="hero">
+  <h1>🎗️ การรักษามะเร็งในระยะเวลาที่กำหนด จังหวัดกาญจนบุรี</h1>
+  <p>ปีงบประมาณ 2566–2569 · ปี 2569 เป็นข้อมูล 12 เดือน (1 ต.ค. 2568 – 30 ก.ย. 2569)</p>
+  <svg viewBox="0 0 900 130" role="img" aria-label="ภาพประกอบโรงพยาบาล ริบบิ้นสีชมพูและสีน้ำเงิน และทีมแพทย์">
+    <defs><linearGradient id="w" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#e9d5ff"/></linearGradient></defs>
+    <path d="M0 100 Q250 60 480 98 T900 88 V130 H0Z" fill="#fff" opacity=".22"/><rect y="118" width="900" height="12" fill="#4c1d95" opacity=".35"/>
+    <g transform="translate(40,20)"><rect x="0" y="22" width="150" height="80" rx="6" fill="url(#w)"/><rect x="50" y="0" width="50" height="30" rx="4" fill="#fff"/><rect x="68" y="4" width="14" height="22" fill="#ef4444"/><rect x="63" y="9" width="24" height="12" fill="#ef4444"/><g fill="#93c5fd"><rect x="12" y="36" width="20" height="16"/><rect x="42" y="36" width="20" height="16"/><rect x="88" y="36" width="20" height="16"/><rect x="118" y="36" width="20" height="16"/><rect x="12" y="62" width="20" height="16"/><rect x="118" y="62" width="20" height="16"/></g><rect x="62" y="66" width="26" height="36" fill="#a78bfa"/></g>
+    <g transform="translate(250,20)"><path d="M40 0c24 0 38 18 28 44-6 14-18 24-28 44-10-20-22-30-28-44C2 18 16 0 40 0z" fill="#ec4899"/><path d="M40 44l-26 56h18l8-20 8 20h18z" fill="#f472b6"/><text x="86" y="40" font-size="20" font-weight="800" style="fill:#fff">เต้านม</text></g>
+    <g transform="translate(450,20)"><path d="M40 0c24 0 38 18 28 44-6 14-18 24-28 44-10-20-22-30-28-44C2 18 16 0 40 0z" fill="#2563eb"/><path d="M40 44l-26 56h18l8-20 8 20h18z" fill="#60a5fa"/><text x="86" y="40" font-size="20" font-weight="800" style="fill:#fff">ลำไส้ใหญ่</text></g>
+    <g transform="translate(700,12)"><circle cx="44" cy="22" r="15" fill="#f5c9a0"/><path d="M29 18q15-20 30 0z" fill="#3b2a1a"/><path d="M22 54q22-18 44 0v54H22z" fill="#fff"/><path d="M34 44q10 26 20 0" fill="none" stroke="#334155" stroke-width="3"/><circle cx="44" cy="72" r="5" fill="#ec4899"/><rect x="70" y="60" width="38" height="28" rx="4" fill="#fff"/><path d="M76 74h8l4-10 5 16 4-6h8" fill="none" stroke="#ec4899" stroke-width="2.5"/></g>
+  </svg>
+</div>
+
+<div class="ctl"><b>ปีงบประมาณ</b><div class="seg" id="yr"></div><b>มุมมอง</b><div class="seg" id="md"><button data-m="ov">ภาพรวมจังหวัด</button><button data-m="hs">รายละเอียดรายโรงพยาบาล</button></div><span style="flex:1"></span><button class="sv" id="sv">💾 บันทึกข้อมูล</button><button class="rs" id="rs">↩ คืนค่าตามไฟล์</button><span id="ms" class="pill wt" style="display:none"></span></div>
+
+<div id="main"></div>
+
+<div class="card"><h2>🔎 สัดส่วนผู้ป่วยมะเร็งเต้านมและลำไส้ใหญ่ระยะเริ่มแรก — รายอำเภอ</h2>
+<p class="sub">ชีต “สัดส่วนผู้ป่วยมะเร็ง” ในไฟล์ยังไม่มีตัวเลข · กรอก A/B รายโรงพยาบาลในตาราง ระบบรวมเป็นรายอำเภอและจังหวัดให้อัตโนมัติ</p>
+<div class="ctl" style="position:static;box-shadow:none;background:transparent;padding:0;margin:0 0 10px"><b>มุมมอง</b><div class="seg" id="em"><button data-e="d">ภาพรวมรายอำเภอ</button><button data-e="h">กรอก/ดูรายโรงพยาบาล</button></div></div>
+<div id="early"></div>
+<p class="lg">⚠️ ไฟล์ระบุเกณฑ์เป็น “≤ 55%” (เต้านม ระยะ 0–2) และ “≤ 30%” (ลำไส้ใหญ่ Adenomatous polyps + ระยะ 0–2) แต่ตัวชี้วัดการตรวจพบระยะเริ่มแรกโดยทั่วไปยิ่งสูงยิ่งดี หน้านี้จึงประเมินว่า “ถึงเกณฑ์ = ไม่ต่ำกว่าเกณฑ์” โปรดยืนยันนิยาม · การจัด รพ. เข้าอำเภอยึดตามการจัดกลุ่มในชีตคัดกรอง CA · กรอกแล้วกด “💾 บันทึกข้อมูล” ที่แถบด้านบน</p></div>
+
+<div class="card alert"><h2>⚠️ ข้อควรระวังด้านคุณภาพข้อมูล</h2><ul>
+<li><b>ปี 2569 (12 เดือน):</b> คอลัมน์ “รวม” และร้อยละในไฟล์ไม่สอดคล้องกับรายโรงพยาบาล (ผ่าตัด: วางแผน 297 แต่ได้รับ 358 · ร้อยละที่ระบุ 85% / เคมีบำบัด 70.5%) จึงคำนวณใหม่จากรายโรงพยาบาล: ผ่าตัด 371/458 = 81.0% · เคมีบำบัด 210/255 = 82.4% · รังสีรักษา 54/85 = 63.5%</li>
+<li>ปี 2566 และ 2568 ร้อยละที่ไฟล์ระบุ (63.73%, 81.08%) ต่างจากที่คำนวณจากจำนวน (63.97%, 81.30%) เล็กน้อย เพราะใช้ตัวหารต่างกัน</li>
+<li>รพ.บ่อพลอยไม่มีข้อมูลผู้ป่วยทุกปี · รายงานรอบ 11 เดือนระบุปัญหา รพ.พหลฯ ต้องประสานข้อมูลหลายที่ ทำให้ล่าช้า และยืนยันข้อมูลแล้วเพียง รพ.มะการักษ์ ควรตรวจสอบสถานะล่าสุดใน TCB</li></ul></div>
+
+<div class="card rec"><h2>💡 สรุปและข้อเสนอแนะเชิงนโยบาย</h2><ol>
+<li><b>ปี 2569 ผ่านเกณฑ์ครบทั้ง 3 ประเภท:</b> ผ่าตัด 81.0% (≥70) · เคมีบำบัด 82.4% (≥70) · รังสีรักษา 63.5% (≥60)</li>
+<li><b>ผ่าตัดผ่านเกณฑ์ต่อเนื่องสองปี</b> หลังไม่ผ่านปี 2566–2567 (64.0%, 62.7%) แต่ รพ.มะการักษ์ 73.3% ยังใกล้เกณฑ์ ควรติดตามเคสเกินกำหนดรายบุคคล</li>
+<li><b>รังสีรักษาเหนือเกณฑ์เพียง 3.5 จุด</b> และลดลงจาก 66.1% (ปี 2568) ให้บริการที่ รพ.พหลฯ แห่งเดียว ควรทบทวนกำลังการให้บริการและคิวฉายรังสี</li>
+<li>เร่งบันทึกสัดส่วนมะเร็งเต้านม/ลำไส้ใหญ่ระยะเริ่มแรกรายอำเภอจากทะเบียนมะเร็ง และตรวจสอบตัวเลข “รวม” ปี 2569 ก่อนรายงานเขต</li></ol></div>
+
+<p class="note">แหล่งข้อมูล: ไฟล์ SERVICE PLAN มะเร็ง 2569 (V3) ชีต “รักษามะเร็ง 66-70”, “การรักษามะเร็ง 2569 (11 เดือน)” (ชนิดมะเร็ง), “สัดส่วนผู้ป่วยมะเร็ง” · ร้อยละคำนวณจากจำนวนรายโรงพยาบาล · ภาพประกอบเป็นกราฟิกเวกเตอร์ ไม่ใช่ภาพถ่ายจริง</p>
+</div>
+<script>
+var Y=["2566","2567","2568","2569"],HN=["รพ.พหลฯ","รพ.มะการักษ์","รพ.ทองผาภูมิ","รพ.สมเด็จพระสังฆราชฯ 19","รพ.บ่อพลอย"];
+var TX=[["surg","ผ่าตัด ≤ 4 สัปดาห์","🔪",70,"#ec4899","#f9a8d4"],["chemo","เคมีบำบัด ≤ 6 สัปดาห์","💉",70,"#8b5cf6","#c4b5fd"],["rt","รังสีรักษา ≤ 6 สัปดาห์","☢️",60,"#f59e0b","#fcd34d"]];
+var D={surg:{"2566":[[145,106,8,13,0],[84,70,8,12,0]],"2567":[[115,111,24,2,0],[68,67,22,1,0]],"2568":[[198,133,20,18,0],[161,104,17,18,0]],"2569":[[260,161,8,29,0],[216,118,8,29,0]]},
+chemo:{"2566":[[268,40,0,1,0],[196,34,0,1,0]],"2567":[[142,59,0,0,0],[110,55,0,0,0]],"2568":[[195,65,0,0,0],[160,57,0,0,0]],"2569":[[141,114,0,0,0],[114,96,0,0,0]]},
+rt:{"2566":[[134,0,0,0,0],[87,0,0,0,0]],"2567":[[225,0,0,0,0],[147,0,0,0,0]],"2568":[[171,0,0,0,0],[113,0,0,0,0]],"2569":[[85,0,0,0,0],[54,0,0,0,0]]}};
+var st={y:"2569",m:"ov",e:"d"};
+function P(a,b){return b?a*100/b:0}
+function sm(a){return a.reduce(function(x,y){return x+y},0)}
+function tot(k,y){var d=D[k][y];return [sm(d[0]),sm(d[1])]}
+function pc(k,y){var t=tot(k,y);return P(t[1],t[0])}
+function ring(p,c){return '<div class="ring" style="--p:'+p+';--c:'+c+'"><i>'+p.toFixed(1)+'%</i></div>'}
+function col(k,c,th){var W=300,H=170,l=30,b=26,t=14,s='<svg viewBox="0 0 '+W+' '+H+'" width="100%">',y=function(v){return t+(100-v)*(H-t-b)/100};
+ [0,50,100].forEach(function(v){s+='<line x1="'+l+'" x2="'+(W-6)+'" y1="'+y(v)+'" y2="'+y(v)+'" stroke="#8884"/><text x="'+(l-4)+'" y="'+(y(v)+4)+'" font-size="10" text-anchor="end">'+v+'</text>'});
+ Y.forEach(function(n,i){var p=pc(k,n),x=l+10+i*64,on=n==st.y;s+='<g class="cc" data-y="'+n+'"><rect x="'+x+'" y="'+y(p)+'" width="42" height="'+(y(0)-y(p))+'" rx="7" fill="'+c+'" opacity="'+(on?1:.55)+'"'+(on?' stroke="#facc15" stroke-width="3"':'')+'/><text x="'+(x+21)+'" y="'+(y(p)-4)+'" font-size="11" font-weight="700" text-anchor="middle">'+p.toFixed(1)+'</text><text x="'+(x+21)+'" y="'+(H-8)+'" font-size="11" text-anchor="middle">'+n+'</text></g>'});
+ return s+'<line x1="'+l+'" x2="'+(W-6)+'" y1="'+y(th)+'" y2="'+y(th)+'" stroke="#ef4444" stroke-dasharray="5 4" stroke-width="2"/><text x="'+(W-6)+'" y="'+(y(th)-3)+'" font-size="10" text-anchor="end" style="fill:#ef4444">เกณฑ์ '+th+'%</text></svg>'}
+function main(){var y=st.y,py=Y[Y.indexOf(y)-1],h="";
+ if(st.m=="ov"){
+  h+='<div class="grid g3" style="margin-top:12px">'+TX.map(function(t){var p=pc(t[0],y),T=tot(t[0],y),ok=p>=t[3],d=py?p-pc(t[0],py):null;return '<div class="k" style="--c:'+t[4]+'"><h3>'+t[2]+' '+t[1]+'</h3>'+ring(p,t[4])+'<span class="pill'+(ok?'':' no')+'">'+(ok?'✅ ผ่านเกณฑ์':'❌ ไม่ผ่าน')+' ≥ '+t[3]+'%</span><small>'+T[1]+' จาก '+T[0]+' ราย'+(d==null?'':' · เทียบปี '+py+': '+(d>=0?'+':'')+d.toFixed(1)+' จุด')+'</small></div>'}).join("")+'</div>';
+  h+='<div class="card"><h2>📊 แยกตามการรักษา: เปรียบเทียบปี 2566–2569</h2><p class="sub">กดที่แท่งเพื่อเลือกปี · เส้นแดง = เกณฑ์ · ปี 2569 = 12 เดือน</p><div class="grid g3">'+TX.map(function(t){return '<div><b style="color:'+t[4]+'">'+t[2]+' '+t[1]+'</b>'+col(t[0],t[4],t[3])+'</div>'}).join("")+'</div></div>';
+  h+='<div class="card"><h2>🧮 ตารางสรุปจำนวนผู้ป่วย (ได้รับการรักษาตามกำหนด / วางแผนรักษา)</h2><div class="tw"><table><tr><th>การรักษา</th>'+Y.map(function(n){return '<th>'+n+'</th>'}).join("")+'</tr>'+TX.map(function(t){return '<tr><td>'+t[2]+' '+t[1]+'</td>'+Y.map(function(n){var T=tot(t[0],n),p=P(T[1],T[0]);return '<td style="color:'+(p>=t[3]?'#10b981':'#ef4444')+'"><b>'+p.toFixed(1)+'%</b><br><small>'+T[1]+'/'+T[0]+'</small></td>'}).join("")+'</tr>'}).join("")+'</table></div></div>';
+ }else{
+  h+='<div class="grid g2">'+TX.map(function(t){var d=D[t[0]][y],r=HN.map(function(n,i){return [n,d[0][i],d[1][i]]}).filter(function(x){return x[1]>0});
+   return '<div class="card"><h2>'+t[2]+' '+t[1]+' · ปี '+y+'</h2><p class="sub">เส้นดำ = เกณฑ์ ≥ '+t[3]+'%</p>'+r.map(function(x){var p=P(x[2],x[1]);return '<div class="tr" style="--c:'+t[4]+';--c2:'+t[5]+'"><span>'+x[0]+'<br><small>'+x[2]+'/'+x[1]+' ราย</small></span><div class="b"><i style="width:'+Math.min(100,p)+'%"></i><u style="left:'+t[3]+'%"></u></div><b style="color:'+(p>=t[3]?'#10b981':'#ef4444')+'">'+p.toFixed(1)+'%</b></div>'}).join("")+'<div class="lg">โรงพยาบาลที่ไม่มีผู้ป่วย/ไม่ให้บริการไม่แสดง'+(t[0]=="rt"?' · รังสีรักษาให้บริการที่ รพ.พหลฯ':'')+'</div></div>'}).join("")+'</div>';
+  h+='<div class="card"><h2>✏️ กรอก/แก้ไขข้อมูล ปี '+y+'</h2><p class="sub">กรอกจำนวนผู้ป่วยรายโรงพยาบาล แล้วกด “💾 บันทึกข้อมูล” ที่แถบด้านบน</p><div class="tw"><table><tr><th rowspan="2">โรงพยาบาล</th>'+TX.map(function(t){return '<th colspan="2">'+t[2]+' '+t[1]+'</th>'}).join("")+'</tr><tr>'+TX.map(function(){return '<th>วางแผน</th><th>ได้ตามกำหนด</th>'}).join("")+'</tr>'+HN.map(function(n,i){return '<tr><td>'+n+'</td>'+TX.map(function(t){return [0,1].map(function(r){var bad=r==1&&D[t[0]][y][1][i]>D[t[0]][y][0][i];return '<td><input type="number" min="0" inputmode="numeric" data-t="'+t[0]+'" data-r="'+r+'" data-i="'+i+'" value="'+D[t[0]][y][r][i]+'"'+(bad?' style="border-color:#ef4444"':'')+'></td>'}).join("")}).join("")+'</tr>'}).join("")+'</table></div><p class="lg">ช่องกรอบสีแดง = จำนวนที่ได้รับตามกำหนดมากกว่าจำนวนวางแผน โปรดตรวจสอบ</p></div>';
+  h+='<div class="card"><h2>🎀 ชนิดมะเร็งที่รักษา (ข้อมูลรอบ 11 เดือน ปี 2569)</h2><p class="sub">ตามที่ รพ.ระบุในไฟล์ · รพ.พหลฯ ไม่ได้ระบุชนิด</p>'+[["ผ่าตัด · รพ.มะการักษ์",37,32,81],["ผ่าตัด · รพ.ทองผาภูมิ",0,3,3],["ผ่าตัด · รพ.สมเด็จพระสังฆราชฯ",16,12,0],["เคมีบำบัด · รพ.มะการักษ์",40,4,63]].map(function(r){var s=r[1]+r[2]+r[3],f=function(v,c){return v?'<div style="width:'+v*100/s+'%;background:'+c+';color:#fff;font-size:12px;font-weight:700;text-align:center;overflow:hidden">'+v+'</div>':''};return '<div class="tr" style="grid-template-columns:190px 1fr 40px"><span>'+r[0]+'</span><div style="display:flex;height:22px;border-radius:11px;overflow:hidden;background:var(--bd)">'+f(r[1],"#ec4899")+f(r[2],"#2563eb")+f(r[3],"#14b8a6")+'</div><b>'+s+'</b></div>'}).join("")+'<span class="chip" style="background:#ec4899;color:#fff">เต้านม</span><span class="chip" style="background:#2563eb;color:#fff">ลำไส้ใหญ่</span><span class="chip" style="background:#14b8a6;color:#fff">นรีเวช</span></div>';
+ }
+ document.getElementById("main").innerHTML=h;
+ document.getElementById("yr").innerHTML=Y.map(function(n){return '<button data-y="'+n+'" class="'+(n==st.y?'on':'')+'">'+n+(n=="2569"?' (12 ด.)':'')+'</button>'}).join("");
+ Array.prototype.forEach.call(document.querySelectorAll("#md button"),function(b){b.className=b.dataset.m==st.m?"on":""});
+}
+// early stage by district
+var HS=[["รพท.พหลพลพยุหเสนา","เมืองกาญจนบุรี"],["รพท.มะการักษ์","ท่ามะกา"],["รพช.ทองผาภูมิ","ทองผาภูมิ"],["รพช.สมเด็จพระสังฆราชฯ ที่ 19","ท่าม่วง"],["รพช.บ่อพลอย","บ่อพลอย"],["รพช.เจ้าคุณไพบูลย์พนมทวน","พนมทวน"],["รพช.ด่านมะขามเตี้ย","ด่านมะขามเตี้ย"],["รพช.ท่ากระดาน","ศรีสวัสดิ์"],["รพช.ศุกร์ศิริศรีสวัสดิ์","ศรีสวัสดิ์"],["รพช.ไทรโยค","ไทรโยค"],["รพช.สมเด็จพระปิยมหาราชฯ","ไทรโยค"],["รพช.เลาขวัญ","เลาขวัญ"],["รพช.พยาบาลสถานพระบารมี","หนองปรือ"],["รพช.หนองปรือ","หนองปรือ"],["รพช.สังขละบุรี","สังขละบุรี"],["รพช.ห้วยกระเจาเฉลิมพระเกียรติฯ","ห้วยกระเจา"]];
+var K="ca-all-v3",V={},DEF=JSON.parse(JSON.stringify(D)),dirty=false,dbr=null;
+try{var sv0=JSON.parse(localStorage.getItem(K)||"null");if(sv0&&sv0.D){D=sv0.D;V=sv0.V||{}}}catch(e){}
+function msg(t,c){var m=document.getElementById("ms");m.style.display=t?"inline-block":"none";m.textContent=t||"";m.className="pill "+(c||"wt")+(c=="no"?" no":"");if(c=="ok")m.className="pill"}
+function mark(){dirty=true;msg("● มีการเปลี่ยนแปลงที่ยังไม่บันทึก","wt")}
+async function saveAll(){var o={D:D,V:V,t:Date.now()},j=JSON.stringify(o),ls=true;try{localStorage.setItem(K,j)}catch(e){ls=false}
+ if(dbr){try{await dbr.doc("app/state").set({json:j});dirty=false;msg("✅ บันทึกแล้ว · ทุกคนที่เปิดลิงก์เห็นข้อมูลชุดเดียวกัน","ok");return}catch(e){dirty=false;msg(ls?"บันทึกในเบราว์เซอร์นี้แล้ว (ไม่มีสิทธิ์เขียนข้อมูลร่วม)":"บันทึกไม่สำเร็จ","wt");return}}
+ dirty=false;msg(ls?"✅ บันทึกในเบราว์เซอร์นี้แล้ว":"บันทึกไม่สำเร็จ",ls?"ok":"no")}
+(function(){if(!(window.claude&&claude.use))return;claude.use("db").then(function(db){if(!db)return;dbr=db;return db.doc("app/state").get().then(function(sn){if(sn.exists&&!dirty){try{var o=JSON.parse(sn.data().json);if(o&&o.D){D=o.D;V=o.V||{};main();early();msg("โหลดข้อมูลที่บันทึกร่วมไว้แล้ว","ok")}}catch(e){}}})}).catch(function(){})})();
+function g(i,f){var v=parseFloat(V[i+f]);return isNaN(v)?null:v}
+function agg(idx,f){var a=0,b=0,has=false;idx.forEach(function(i){var x=g(i,f+"a"),y=g(i,f+"b");if(x!=null&&y!=null){a+=x;b+=y;has=true}});return has?[a,b]:null}
+function eBar(r,th,c,c2){if(!r||!r[1])return '<div class="tr" style="grid-template-columns:1fr"><small>รอข้อมูล</small></div>';var p=P(r[0],r[1]);return '<div class="b" style="position:relative;height:16px;background:var(--bd);border-radius:9px"><i style="display:block;height:100%;width:'+Math.min(100,p)+'%;border-radius:9px;background:linear-gradient(90deg,'+c+','+c2+')"></i><u style="position:absolute;top:-3px;bottom:-3px;left:'+th+'%;width:2px;background:var(--tx);opacity:.7"></u></div>'}
+function pt(r,th){if(!r||!r[1])return '–';var p=P(r[0],r[1]);return '<b style="color:'+(p>=th?'#10b981':'#ef4444')+'">'+p.toFixed(1)+'%</b> <small>('+r[0]+'/'+r[1]+')</small>'}
+function early(){var h="",all=HS.map(function(x,i){return i});
+ var tb=agg(all,"b"),tc=agg(all,"c");
+ h+='<div class="grid g2" style="margin-bottom:10px">'+[["🎀 เต้านม ระยะ 0–2 (ทั้งจังหวัด)",tb,55,"#ec4899"],["🎗️ ลำไส้ใหญ่/ไส้ตรง polyps + ระยะ 0–2 (ทั้งจังหวัด)",tc,30,"#2563eb"]].map(function(x){var p=x[1]&&x[1][1]?P(x[1][0],x[1][1]):0,ok=p>=x[2];return '<div class="k" style="--c:'+x[3]+'"><h3>'+x[0]+'</h3>'+ring(p,x[3]).replace(p.toFixed(1)+'%',x[1]&&x[1][1]?p.toFixed(1)+'%':'–')+(x[1]&&x[1][1]?'<span class="pill'+(ok?'':' no')+'">'+(ok?'✅ ถึงเกณฑ์':'ต่ำกว่าเกณฑ์')+' '+x[2]+'%</span>':'<span class="pill wt">รอข้อมูล</span>')+'</div>'}).join("")+'</div>';
+ if(st.e=="d"){var ds=[];HS.forEach(function(x,i){if(ds.indexOf(x[1])<0)ds.push(x[1])});
+  h+='<div class="tw"><table><tr><th>อำเภอ</th><th>🎀 เต้านม ระยะ 0–2 (เกณฑ์ 55%)</th><th style="min-width:150px">แถบเทียบเกณฑ์</th><th>🎗️ ลำไส้ใหญ่ (เกณฑ์ 30%)</th><th style="min-width:150px">แถบเทียบเกณฑ์</th></tr>'+ds.map(function(d){var ix=[];HS.forEach(function(x,i){if(x[1]==d)ix.push(i)});var b=agg(ix,"b"),c=agg(ix,"c");return '<tr><td>'+d+'<br><small>'+ix.length+' รพ.</small></td><td>'+pt(b,55)+'</td><td>'+eBar(b,55,"#ec4899","#f9a8d4")+'</td><td>'+pt(c,30)+'</td><td>'+eBar(c,30,"#2563eb","#93c5fd")+'</td></tr>'}).join("")+'</table></div>';
+ }else{
+  h+='<div class="tw"><table><tr><th rowspan="2">โรงพยาบาล</th><th rowspan="2">อำเภอ</th><th colspan="2">🎀 เต้านม</th><th colspan="2">🎗️ ลำไส้ใหญ่</th><th rowspan="2">ร้อยละ<br>เต้านม / ลำไส้</th></tr><tr><th>A (0–2)</th><th>B (0–4)</th><th>A</th><th>B</th></tr>'+HS.map(function(x,i){var f=function(k){var v=V[i+k];return '<td><input type="number" min="0" inputmode="numeric" data-i="'+i+'" data-f="'+k+'" value="'+(v==null?'':v)+'"></td>'};return '<tr><td>'+x[0]+'</td><td>'+x[1]+'</td>'+f("ba")+f("bb")+f("ca")+f("cb")+'<td id="r'+i+'"></td></tr>'}).join("")+'</table></div>';
+ }
+ document.getElementById("early").innerHTML=h;if(st.e=="h")rows();
+ Array.prototype.forEach.call(document.querySelectorAll("#em button"),function(b){b.className=b.dataset.e==st.e?"on":""})}
+function rows(){HS.forEach(function(x,i){var b=agg([i],"b"),c=agg([i],"c"),e=document.getElementById("r"+i);if(e)e.innerHTML=pt(b,55).split(" <")[0]+' / '+pt(c,30).split(" <")[0]})}
+document.addEventListener("click",function(e){var q=e.target.closest("#sv,#rs");if(q){if(q.id=="sv")saveAll();else if(confirm("คืนค่าข้อมูลทั้งหมดเป็นตามไฟล์ต้นฉบับ (ข้อมูลที่กรอกไว้จะหายจนกว่าจะบันทึกใหม่)?")){D=JSON.parse(JSON.stringify(DEF));V={};main();early();mark()}return}var b=e.target.closest("[data-y],[data-m],[data-e]");if(!b)return;
+ if(b.dataset.y){st.y=b.dataset.y;main()}if(b.dataset.m){st.m=b.dataset.m;main()}if(b.dataset.e){st.e=b.dataset.e;early()}});
+document.addEventListener("change",function(e){var t=e.target;if(!t.dataset)return;
+ if(t.dataset.t){var v=parseFloat(t.value);D[t.dataset.t][st.y][+t.dataset.r][+t.dataset.i]=isNaN(v)||v<0?0:v;mark();main()}
+ else if(t.dataset.f){V[t.dataset.i+t.dataset.f]=t.value;mark();early()}});
+main();early();
+</script>
+</body>
+</html>
